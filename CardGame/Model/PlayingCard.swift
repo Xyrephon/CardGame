@@ -8,46 +8,40 @@
 
 import UIKit
 
-class Card
+class PlayingCard : Card
 {
-    private var backImage: UIImage
+    private var rank : Int
     {
         get
         {
-            return self.backImage
+            return self.rank
         }
-        set(backImage)
+        set(rank)
         {
-            self.backImage = backImage
+            self.rank = rank
         }
     }
     
-    private var isFaceUp: Bool
-    
-    init()
+    private var suit : String
     {
-        isFaceUp = false
-        backImage = UIImage()
+        get
+        {
+            return self.suit
+        }
+        set(suit)
+        {
+            self.suit = suit
+        }
     }
     
-    func toString() -> String
+    func getRank() -> Int
     {
-        let description = "The card is\(isFaceUp)"
-        return description
+        return self.rank
     }
     
-    func getBackImage() -> UIImage
+    func setRank(rank : Int)
     {
-        return backImage
+        self.rank = rank
     }
     
-    func isUp() -> Bool
-    {
-        return isFaceUp
-    }
-    
-    func setIsFacing(isFaceUp : Bool) -> Void
-    {
-        self.isFaceUp = isFaceUp
-    }
 }
