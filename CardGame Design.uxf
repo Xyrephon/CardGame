@@ -93,13 +93,14 @@ bg=magenta</panel_attributes>
     </coordinates>
     <panel_attributes>CardGame.Model::PlayingCard
 --
--suit : String
--color : UIColor
--rank : Int
--frontImage : UIImage
+- suit : String
+- color : UIColor
+- rank : Int
+- frontImage : UIImage
 --
-+get/set
-+init
++ get/set
++ init
++ init(withRank:Int, ofSuit: String)
 bg=green</panel_attributes>
     <additional_attributes/>
   </element>
