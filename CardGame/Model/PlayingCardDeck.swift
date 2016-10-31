@@ -1,5 +1,5 @@
 //
-//  Deck.swift
+//  PlayingCardDeck.swift
 //  CardGame
 //
 //  Created by Tucker, Jonah on 10/31/16.
@@ -7,4 +7,3 @@
 //
 
 import UIKit
-
