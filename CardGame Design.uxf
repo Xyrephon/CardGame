@@ -52,14 +52,13 @@ bg=green</panel_attributes>
       <w>270</w>
       <h>130</h>
     </coordinates>
-    <panel_attributes>CardGame.Model::Deck
+    <panel_attributes>CardGame.Model::PlayingCardDeck
 --
-cards : PlayingCard[]
+- cards: [PlayingCard]
 
 --
-init()
-shuffle : Void
-order : Void
++ init()
++ orderDeck() : Void
 bg=orange</panel_attributes>
     <additional_attributes/>
   </element>
@@ -74,7 +73,7 @@ bg=orange</panel_attributes>
     <panel_attributes>CardGame.Model::Card
 --
 - BackImage : UIImage
-- isFaceUP: Bool
+- isFaceUp: Bool
 --
 + init()
 + getBackImage() : UIImage
@@ -98,8 +97,7 @@ bg=magenta</panel_attributes>
 - rank : Int
 - frontImage : UIImage
 --
-+ get/set
-+ init
++ init()
 + init(withRank:Int, ofSuit: String)
 bg=green</panel_attributes>
     <additional_attributes/>
@@ -108,17 +106,19 @@ bg=green</panel_attributes>
     <id>UMLClass</id>
     <coordinates>
       <x>100</x>
-      <y>290</y>
+      <y>270</y>
       <w>250</w>
-      <h>120</h>
+      <h>140</h>
     </coordinates>
     <panel_attributes>CardGame.Model::Deck
 
 --
-
+- cards: [Card]
 
 --
-init()
++ init()
++ shuffleDeck() : Void
++ cutDeck() : Void
 bg=blue</panel_attributes>
     <additional_attributes/>
   </element>
