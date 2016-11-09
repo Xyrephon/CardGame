@@ -75,7 +75,7 @@ bg=orange</panel_attributes>
 - BackImage : UIImage
 - isFaceUp: Bool
 --
-+ init()
++ init() :Initializer
 + getBackImage() : UIImage
 + isFaceUp() : Bool
 + toString() : String
@@ -88,7 +88,7 @@ bg=magenta</panel_attributes>
       <x>590</x>
       <y>510</y>
       <w>280</w>
-      <h>140</h>
+      <h>210</h>
     </coordinates>
     <panel_attributes>CardGame.Model::PlayingCard
 --
@@ -99,6 +99,11 @@ bg=magenta</panel_attributes>
 --
 + init()
 + init(withRank:Int, ofSuit: String)
++ getRank (): Int
++ getSuit() : String
++ getColor() : UIColor
++ toString() : String
++ getcardData() : string
 bg=green</panel_attributes>
     <additional_attributes/>
   </element>
@@ -108,7 +113,7 @@ bg=green</panel_attributes>
       <x>100</x>
       <y>270</y>
       <w>250</w>
-      <h>140</h>
+      <h>170</h>
     </coordinates>
     <panel_attributes>CardGame.Model::Deck
 
@@ -119,6 +124,8 @@ bg=green</panel_attributes>
 + init()
 + shuffleDeck() : Void
 + cutDeck() : Void
++ drawCard(): Card?
++ drawRandomCard() : Card?
 bg=blue</panel_attributes>
     <additional_attributes/>
   </element>
@@ -126,12 +133,12 @@ bg=blue</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>210</x>
-      <y>400</y>
+      <y>430</y>
       <w>30</w>
-      <h>150</h>
+      <h>120</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>

@@ -61,6 +61,12 @@ class PlayingCard : Card
         self.rank = rank
     }
     
+    func getCardData() -> String
+    {
+        let data = "\(PlayingCard.validRanks()[rank])\(suit)"
+        return data
+    }
+    
     //The modifier 'class' in front of the func means that this method is visible 
     //without creating an instance of the class in question.
     //This is class method, not an instance method.

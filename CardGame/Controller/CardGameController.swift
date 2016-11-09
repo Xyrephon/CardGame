@@ -11,9 +11,11 @@ import UIKit
 class CardGameController : UIViewController
 {
     @IBOutlet weak var cardButton: UIButton!
+    
     @IBOutlet weak var cardLabel: UILabel!
     
     private lazy var currentDeck = PlayingCardDeck()
+   
     private lazy var clickCount = Int()
     
     override func viewDidLoad()
@@ -27,7 +29,17 @@ class CardGameController : UIViewController
     @IBAction func flipCard(sender: UIButton)
     {
         clickCount += 1
-        let words = "The card has been clicked \(clickCount) times"
+        let words = "The random card has been clicked \(clickCount) times"
         cardLabel.text = words
+        
+        if let currentCard = currentDeck.drawRandomCard() as? PlayingCard
+        {
+            cardButton.setTitle("\(currentCard.getCardData())", forState: UIControlState.Normal)
+        }
+        else
+        {
+            cardLabel.text = "The deck was exhausted - reinitializing"
+            currentDeck = PlayingCardDeck()
+        }
     }
 }
