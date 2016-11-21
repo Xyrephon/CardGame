@@ -13,11 +13,9 @@ class PlayingCard : Card
     internal var rank : Int
     internal var suit : String
     internal var color : UIColor
-    internal var frontImage : UIImage
     
     override init()
     {
-        self.frontImage = UIImage()
         self.color = UIColor.redColor()
         self.rank = 0
         self.suit = String()
@@ -26,7 +24,6 @@ class PlayingCard : Card
     
     init(withRank: Int, ofSuit: String)
     {
-        frontImage = UIImage()
         color = UIColor.redColor()
         rank = withRank
         suit = ofSuit
@@ -46,7 +43,7 @@ class PlayingCard : Card
             facing = " is face down."
         }
         
-        let description = "This PlayingCard has a face value of \(rank), a color of \(color), the back image is \(self.getBackImage()) and if of the \(suit) suit \(facing)"
+        let description = "This PlayingCard has a face value of \(rank), a color of \(color),  and if of the \(suit) suit \(facing)"
     
         return description
     }
