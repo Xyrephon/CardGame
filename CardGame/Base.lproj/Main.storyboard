@@ -17,10 +17,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o1E-df-4dB">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o1E-df-4dB">
                                 <rect key="frame" x="208" y="139" width="185" height="322"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
                                 <state key="normal" title="Card" backgroundImage="CardBack"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="207" y="227" width="186" height="359"/>
+                                </variation>
                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="262" y="246" width="277" height="491"/>
                                 </variation>
@@ -28,11 +31,14 @@
                                     <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i9Y-R4-Z7h"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDE-gi-GqI">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDE-gi-GqI">
                                 <rect key="frame" x="208" y="98" width="185" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="231" y="198" width="139" height="21"/>
+                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKc-f7-Rpj">
                                 <rect key="frame" x="20" y="28" width="131" height="172"/>
@@ -49,6 +55,9 @@
                                 <rect key="frame" x="449" y="28" width="131" height="169"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
                                 <state key="normal" title="Card" backgroundImage="CardBack"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="449" y="28" width="131" height="172"/>
+                                </variation>
                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="262" y="246" width="277" height="491"/>
                                 </variation>
@@ -60,6 +69,9 @@
                                 <rect key="frame" x="449" y="408" width="131" height="172"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
                                 <state key="normal" title="Card" backgroundImage="CardBack"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="449" y="608" width="131" height="172"/>
+                                </variation>
                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="262" y="246" width="277" height="491"/>
                                 </variation>
@@ -71,6 +83,9 @@
                                 <rect key="frame" x="20" y="408" width="131" height="172"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
                                 <state key="normal" title="Card" backgroundImage="CardBack"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="608" width="131" height="172"/>
+                                </variation>
                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="262" y="246" width="277" height="491"/>
                                 </variation>
@@ -82,6 +97,9 @@
                                 <rect key="frame" x="20" y="214" width="131" height="172"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
                                 <state key="normal" title="Card" backgroundImage="CardBack"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="314" width="131" height="172"/>
+                                </variation>
                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="262" y="246" width="277" height="491"/>
                                 </variation>
@@ -93,6 +111,9 @@
                                 <rect key="frame" x="449" y="214" width="131" height="172"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
                                 <state key="normal" title="Card" backgroundImage="CardBack"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="449" y="314" width="131" height="172"/>
+                                </variation>
                                 <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
                                     <rect key="frame" x="262" y="246" width="277" height="491"/>
                                 </variation>
@@ -100,15 +121,18 @@
                                     <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HlX-Vx-ffz"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIN-Jl-9tG">
+                                <rect key="frame" x="277" y="480" width="46" height="30"/>
+                                <state key="normal" title="Add Points"/>
+                                <variation key="heightClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="262" y="608" width="77" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="scoreAdder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rfi-5K-WCf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="o1E-df-4dB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="59g-32-LsF"/>
-                            <constraint firstItem="o1E-df-4dB" firstAttribute="top" secondItem="bDE-gi-GqI" secondAttribute="bottom" constant="20" id="Tma-0c-8xy"/>
-                            <constraint firstItem="bDE-gi-GqI" firstAttribute="centerX" secondItem="o1E-df-4dB" secondAttribute="centerX" id="XwP-tQ-2fh"/>
-                            <constraint firstItem="o1E-df-4dB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="a1m-Rw-Koc"/>
-                            <constraint firstItem="bDE-gi-GqI" firstAttribute="width" secondItem="o1E-df-4dB" secondAttribute="width" id="onF-la-K7O"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="bottomLeftCard" destination="1Mq-zg-rjf" id="RDi-xa-iEo"/>
@@ -123,7 +147,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="420" y="422"/>
+            <point key="canvasLocation" x="455" y="418.5"/>
         </scene>
     </scenes>
     <resources>

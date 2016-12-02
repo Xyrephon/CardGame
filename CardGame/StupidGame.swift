@@ -77,6 +77,9 @@ class StupidGame
             }
             
         }
+        
+        hand.removeAll()
+        drawCards()
         let negativePoints = hand.count
         return points - negativePoints
     }

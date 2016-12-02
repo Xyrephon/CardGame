@@ -31,6 +31,14 @@ class CardGameController : UIViewController
         myGame.startGame()
     }
 
+    @IBAction func scoreAdder(sender: UIButton)
+    {
+        myGame.checkMatch()
+        let score = "Score: \(myGame.checkMatch())"
+        cardLabel.text = score
+        
+    }
+    
     @IBAction func flipCard(sender: UIButton)
     {
         
