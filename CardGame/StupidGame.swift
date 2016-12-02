@@ -38,6 +38,7 @@ class StupidGame
     {
         drawingDeck.shuffleDeck()
         drawCards()
+//      playMatchGame()
     }
     
     private func drawCards () -> Void
@@ -81,16 +82,19 @@ class StupidGame
     }
     
     
-    func playMatchGame() -> Void
-    {
-//        while ()
+//    func playMatchGame() -> Void
+//    {
+//        var cardCount = 45
+//        while (cardCount >= 7)
 //        {
+//            checkMatch()
+//            score += checkMatch()
+//            hand.removeAll()
+//            drawCards()
 //            
+//            cardCount -= 7
 //        }
-        checkMatch()
-        score += checkMatch()
-        hand.removeAll()
+    
         
         
-    }
 }

@@ -34,6 +34,72 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKc-f7-Rpj">
+                                <rect key="frame" x="20" y="28" width="131" height="172"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                <state key="normal" title="Card" backgroundImage="CardBack"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="262" y="246" width="277" height="491"/>
+                                </variation>
+                                <connections>
+                                    <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wn7-Rk-HFo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktf-FZ-wie">
+                                <rect key="frame" x="449" y="28" width="131" height="169"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                <state key="normal" title="Card" backgroundImage="CardBack"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="262" y="246" width="277" height="491"/>
+                                </variation>
+                                <connections>
+                                    <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NOy-nU-M9W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhe-kY-QAI">
+                                <rect key="frame" x="449" y="408" width="131" height="172"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                <state key="normal" title="Card" backgroundImage="CardBack"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="262" y="246" width="277" height="491"/>
+                                </variation>
+                                <connections>
+                                    <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gbx-b3-eJ7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Mq-zg-rjf">
+                                <rect key="frame" x="20" y="408" width="131" height="172"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                <state key="normal" title="Card" backgroundImage="CardBack"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="262" y="246" width="277" height="491"/>
+                                </variation>
+                                <connections>
+                                    <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O3S-3X-WeS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6F-JY-v9V">
+                                <rect key="frame" x="20" y="214" width="131" height="172"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                <state key="normal" title="Card" backgroundImage="CardBack"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="262" y="246" width="277" height="491"/>
+                                </variation>
+                                <connections>
+                                    <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C4B-7F-A71"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZvJ-KS-kxA">
+                                <rect key="frame" x="449" y="214" width="131" height="172"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
+                                <state key="normal" title="Card" backgroundImage="CardBack"/>
+                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="262" y="246" width="277" height="491"/>
+                                </variation>
+                                <connections>
+                                    <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HlX-Vx-ffz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -45,8 +111,14 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bottomLeftCard" destination="1Mq-zg-rjf" id="RDi-xa-iEo"/>
+                        <outlet property="bottomRightCard" destination="xhe-kY-QAI" id="f2E-cA-buM"/>
                         <outlet property="cardButton" destination="o1E-df-4dB" id="ENS-sI-Q4o"/>
                         <outlet property="cardLabel" destination="bDE-gi-GqI" id="GsU-fN-D98"/>
+                        <outlet property="middleLeftCard" destination="D6F-JY-v9V" id="kFO-Ch-r56"/>
+                        <outlet property="middleRightCard" destination="ZvJ-KS-kxA" id="In0-sS-oyd"/>
+                        <outlet property="topLeftCard" destination="VKc-f7-Rpj" id="94B-jE-Qt3"/>
+                        <outlet property="topRightCard" destination="ktf-FZ-wie" id="86e-QF-nVJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
