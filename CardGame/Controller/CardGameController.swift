@@ -39,6 +39,8 @@ class CardGameController : UIViewController
         topRightCard.setTitle ("\(myGame.hand[2].getCardData())", forState: UIControlState.Normal)
         bottomLeftCard.setTitle("\(myGame.hand[3].getCardData())", forState: UIControlState.Normal)
         bottomRightCard.setTitle("\(myGame.hand[4].getCardData())", forState: UIControlState.Normal)
+        middleLeftCard.setTitle("\(myGame.hand[5].getCardData())", forState: UIControlState.Normal)
+        middleRightCard.setTitle("\(myGame.hand[6].getCardData())", forState: UIControlState.Normal)
 //        clickCount += 1
 //        let words = "The random card has been clicked \(clickCount) times"
 //        cardLabel.text = words
