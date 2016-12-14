@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Card Game Controller-->
@@ -14,207 +18,89 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o1E-df-4dB">
                                 <rect key="frame" x="208" y="139" width="185" height="322"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
                                 <state key="normal" title="Card" backgroundImage="CardBack"/>
-                                <variation key="heightClass=regular" misplaced="YES">
-                                    <rect key="frame" x="207" y="227" width="186" height="359"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="262" y="246" width="277" height="491"/>
-                                </variation>
                                 <connections>
                                     <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="i9Y-R4-Z7h"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bDE-gi-GqI">
                                 <rect key="frame" x="208" y="98" width="185" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="231" y="198" width="139" height="21"/>
-                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKc-f7-Rpj">
                                 <rect key="frame" x="20" y="28" width="131" height="172"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
                                 <state key="normal" title="Card" backgroundImage="CardBack"/>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="262" y="246" width="277" height="491"/>
-                                </variation>
                                 <connections>
                                     <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wn7-Rk-HFo"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ktf-FZ-wie">
                                 <rect key="frame" x="449" y="28" width="131" height="169"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
                                 <state key="normal" title="Card" backgroundImage="CardBack"/>
-                                <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="449" y="28" width="131" height="172"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="262" y="246" width="277" height="491"/>
-                                </variation>
                                 <connections>
                                     <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NOy-nU-M9W"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Mq-zg-rjf">
                                 <rect key="frame" x="20" y="408" width="131" height="172"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
                                 <state key="normal" title="Card" backgroundImage="CardBack"/>
-                                <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="20" y="608" width="131" height="172"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="262" y="246" width="277" height="491"/>
-                                </variation>
                                 <connections>
                                     <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O3S-3X-WeS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D6F-JY-v9V">
                                 <rect key="frame" x="20" y="214" width="131" height="172"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
                                 <state key="normal" title="Card" backgroundImage="CardBack"/>
-                                <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="20" y="314" width="131" height="172"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="262" y="246" width="277" height="491"/>
-                                </variation>
                                 <connections>
                                     <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C4B-7F-A71"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZvJ-KS-kxA">
                                 <rect key="frame" x="449" y="214" width="131" height="172"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
                                 <state key="normal" title="Card" backgroundImage="CardBack"/>
-                                <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="449" y="314" width="131" height="172"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="262" y="246" width="277" height="491"/>
-                                </variation>
                                 <connections>
                                     <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HlX-Vx-ffz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIN-Jl-9tG">
                                 <rect key="frame" x="277" y="480" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add Points"/>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="262" y="608" width="77" height="30"/>
-                                </variation>
                                 <connections>
                                     <action selector="scoreAdder:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rfi-5K-WCf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xhe-kY-QAI">
                                 <rect key="frame" x="449" y="408" width="131" height="172"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="18"/>
                                 <state key="normal" title="Card" backgroundImage="CardBack"/>
-                                <variation key="heightClass=regular" ambiguous="YES" misplaced="YES">
-                                    <rect key="frame" x="449" y="608" width="131" height="172"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="262" y="246" width="277" height="491"/>
-                                </variation>
                                 <connections>
                                     <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gbx-b3-eJ7"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="ZvJ-KS-kxA" firstAttribute="width" secondItem="VKc-f7-Rpj" secondAttribute="width" id="0Px-X2-Lzh"/>
-                            <constraint firstItem="1Mq-zg-rjf" firstAttribute="top" secondItem="D6F-JY-v9V" secondAttribute="bottom" constant="20" id="1Ev-tI-OSv"/>
-                            <constraint firstItem="ZvJ-KS-kxA" firstAttribute="top" secondItem="ktf-FZ-wie" secondAttribute="bottom" constant="20" id="1I2-i1-Q3O"/>
-                            <constraint firstItem="ktf-FZ-wie" firstAttribute="width" secondItem="VKc-f7-Rpj" secondAttribute="width" id="4Mf-oc-8zf"/>
-                            <constraint firstItem="o1E-df-4dB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7J2-KP-V1U"/>
-                            <constraint firstItem="D6F-JY-v9V" firstAttribute="height" secondItem="VKc-f7-Rpj" secondAttribute="height" id="8nK-RW-LTv"/>
-                            <constraint firstItem="D6F-JY-v9V" firstAttribute="leading" secondItem="VKc-f7-Rpj" secondAttribute="leading" id="BrP-0m-TRC"/>
-                            <constraint firstItem="xhe-kY-QAI" firstAttribute="top" secondItem="ZvJ-KS-kxA" secondAttribute="bottom" constant="20" id="CGT-eZ-FRJ"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xhe-kY-QAI" secondAttribute="bottom" constant="20" id="Cb2-iY-dBI"/>
-                            <constraint firstItem="1Mq-zg-rjf" firstAttribute="width" secondItem="VKc-f7-Rpj" secondAttribute="width" id="Lon-WW-bVY"/>
-                            <constraint firstItem="D6F-JY-v9V" firstAttribute="top" secondItem="VKc-f7-Rpj" secondAttribute="bottom" constant="20" id="M0f-y3-2R3"/>
-                            <constraint firstItem="1Mq-zg-rjf" firstAttribute="leading" secondItem="VKc-f7-Rpj" secondAttribute="leading" id="OxI-5o-ocq"/>
-                            <constraint firstItem="1Mq-zg-rjf" firstAttribute="height" secondItem="VKc-f7-Rpj" secondAttribute="height" id="TO1-Xa-l0b"/>
-                            <constraint firstItem="ZvJ-KS-kxA" firstAttribute="height" secondItem="VKc-f7-Rpj" secondAttribute="height" id="TY3-hh-gvw"/>
-                            <constraint firstItem="ZvJ-KS-kxA" firstAttribute="trailing" secondItem="ktf-FZ-wie" secondAttribute="trailing" id="UkB-Ko-KDd"/>
-                            <constraint firstItem="ktf-FZ-wie" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="XfL-QK-iK3"/>
-                            <constraint firstItem="xhe-kY-QAI" firstAttribute="trailing" secondItem="ktf-FZ-wie" secondAttribute="trailing" id="ah3-z5-iPs"/>
-                            <constraint firstItem="o1E-df-4dB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="euH-JB-mHO"/>
-                            <constraint firstItem="VKc-f7-Rpj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="nlz-pX-Uyx"/>
-                            <constraint firstItem="D6F-JY-v9V" firstAttribute="width" secondItem="VKc-f7-Rpj" secondAttribute="width" id="pKe-Es-yWR"/>
-                            <constraint firstItem="VKc-f7-Rpj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="rni-8z-yCF"/>
-                            <constraint firstItem="xhe-kY-QAI" firstAttribute="width" secondItem="VKc-f7-Rpj" secondAttribute="width" id="t5n-Xt-QvV"/>
-                            <constraint firstItem="ktf-FZ-wie" firstAttribute="height" secondItem="VKc-f7-Rpj" secondAttribute="height" id="wdf-pO-ete"/>
-                            <constraint firstItem="xhe-kY-QAI" firstAttribute="height" secondItem="VKc-f7-Rpj" secondAttribute="height" id="ydx-qE-UMj"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="nlz-pX-Uyx"/>
-                                <exclude reference="rni-8z-yCF"/>
-                                <exclude reference="7J2-KP-V1U"/>
-                                <exclude reference="euH-JB-mHO"/>
-                                <exclude reference="8nK-RW-LTv"/>
-                                <exclude reference="BrP-0m-TRC"/>
-                                <exclude reference="M0f-y3-2R3"/>
-                                <exclude reference="pKe-Es-yWR"/>
-                                <exclude reference="4Mf-oc-8zf"/>
-                                <exclude reference="XfL-QK-iK3"/>
-                                <exclude reference="wdf-pO-ete"/>
-                                <exclude reference="0Px-X2-Lzh"/>
-                                <exclude reference="1I2-i1-Q3O"/>
-                                <exclude reference="TY3-hh-gvw"/>
-                                <exclude reference="UkB-Ko-KDd"/>
-                                <exclude reference="1Ev-tI-OSv"/>
-                                <exclude reference="Lon-WW-bVY"/>
-                                <exclude reference="OxI-5o-ocq"/>
-                                <exclude reference="TO1-Xa-l0b"/>
-                                <exclude reference="CGT-eZ-FRJ"/>
-                                <exclude reference="ah3-z5-iPs"/>
-                                <exclude reference="t5n-Xt-QvV"/>
-                                <exclude reference="ydx-qE-UMj"/>
-                                <exclude reference="Cb2-iY-dBI"/>
-                            </mask>
-                        </variation>
-                        <variation key="heightClass=regular">
-                            <mask key="constraints">
-                                <include reference="nlz-pX-Uyx"/>
-                                <include reference="rni-8z-yCF"/>
-                                <include reference="7J2-KP-V1U"/>
-                                <include reference="euH-JB-mHO"/>
-                                <include reference="8nK-RW-LTv"/>
-                                <include reference="BrP-0m-TRC"/>
-                                <include reference="M0f-y3-2R3"/>
-                                <include reference="pKe-Es-yWR"/>
-                                <include reference="4Mf-oc-8zf"/>
-                                <include reference="XfL-QK-iK3"/>
-                                <include reference="wdf-pO-ete"/>
-                                <include reference="0Px-X2-Lzh"/>
-                                <include reference="1I2-i1-Q3O"/>
-                                <include reference="TY3-hh-gvw"/>
-                                <include reference="UkB-Ko-KDd"/>
-                                <include reference="1Ev-tI-OSv"/>
-                                <include reference="Lon-WW-bVY"/>
-                                <include reference="OxI-5o-ocq"/>
-                                <include reference="TO1-Xa-l0b"/>
-                                <include reference="CGT-eZ-FRJ"/>
-                                <include reference="ah3-z5-iPs"/>
-                                <include reference="t5n-Xt-QvV"/>
-                                <include reference="ydx-qE-UMj"/>
-                                <include reference="Cb2-iY-dBI"/>
-                            </mask>
-                        </variation>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <connections>
                         <outlet property="bottomLeftCard" destination="1Mq-zg-rjf" id="RDi-xa-iEo"/>

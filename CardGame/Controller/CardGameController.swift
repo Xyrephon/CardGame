@@ -20,9 +20,9 @@ class CardGameController : UIViewController
     @IBOutlet weak var middleRightCard: UIButton!
     
     
-    private lazy var currentDeck = PlayingCardDeck()
-    private lazy var clickCount = Int()
-    private lazy var myGame = StupidGame()
+    fileprivate lazy var currentDeck = PlayingCardDeck()
+    fileprivate lazy var clickCount = Int()
+    fileprivate lazy var myGame = StupidGame()
     
 
     
@@ -31,24 +31,25 @@ class CardGameController : UIViewController
         myGame.startGame()
     }
 
-    @IBAction func scoreAdder(sender: UIButton)
+    @IBAction func scoreAdder(_ sender: UIButton)
     {
-        myGame.checkMatch()
-        let score = "Score: \(myGame.checkMatch())"
-        cardLabel.text = score
+        var score = 0
+        score += myGame.checkMatch()
+        let scoreText = "Score: \(score)"
+        cardLabel.text = scoreText
         
     }
     
-    @IBAction func flipCard(sender: UIButton)
+    @IBAction func flipCard(_ sender: UIButton)
     {
         
-        cardButton.setTitle ("\(myGame.hand[0].getCardData())", forState: UIControlState.Normal)
-        topLeftCard.setTitle ("\(myGame.hand[1].getCardData())", forState: UIControlState.Normal)
-        topRightCard.setTitle ("\(myGame.hand[2].getCardData())", forState: UIControlState.Normal)
-        bottomLeftCard.setTitle("\(myGame.hand[3].getCardData())", forState: UIControlState.Normal)
-        bottomRightCard.setTitle("\(myGame.hand[4].getCardData())", forState: UIControlState.Normal)
-        middleLeftCard.setTitle("\(myGame.hand[5].getCardData())", forState: UIControlState.Normal)
-        middleRightCard.setTitle("\(myGame.hand[6].getCardData())", forState: UIControlState.Normal)
+        cardButton.setTitle ("\(myGame.hand[0].getCardData())", for: UIControlState())
+        topLeftCard.setTitle ("\(myGame.hand[1].getCardData())", for: UIControlState())
+        topRightCard.setTitle ("\(myGame.hand[2].getCardData())", for: UIControlState())
+        bottomLeftCard.setTitle("\(myGame.hand[3].getCardData())", for: UIControlState())
+        bottomRightCard.setTitle("\(myGame.hand[4].getCardData())", for: UIControlState())
+        middleLeftCard.setTitle("\(myGame.hand[5].getCardData())", for: UIControlState())
+        middleRightCard.setTitle("\(myGame.hand[6].getCardData())", for: UIControlState())
 //        clickCount += 1
 //        let words = "The random card has been clicked \(clickCount) times"
 //        cardLabel.text = words

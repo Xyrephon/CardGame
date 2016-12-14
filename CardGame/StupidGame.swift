@@ -41,7 +41,7 @@ class StupidGame
 //      playMatchGame()
     }
     
-    private func drawCards () -> Void
+    fileprivate func drawCards () -> Void
     {
         hand.append((drawingDeck.drawCard() as? PlayingCard)!)
         hand.append((drawingDeck.drawCard() as? PlayingCard)!)
@@ -56,31 +56,30 @@ class StupidGame
     {
         var points = Int()
         
-        for (var OuterLoop = 0; OuterLoop < hand.count; OuterLoop += 1)
+        for var outerLoop in 0 ..< hand.count
         {
             let handSize = hand.count
-            for (var InnerLoop = 0; InnerLoop < hand.count; InnerLoop += 1)
+            for var innerLoop in 0 ..< hand.count
             {
-                if(OuterLoop != InnerLoop && hand[OuterLoop].rank == hand[InnerLoop].rank)
+                if(outerLoop != innerLoop && hand[outerLoop].rank == hand[innerLoop].rank)
                 {
-                    hand.removeAtIndex(InnerLoop)
+                    hand.remove(at: innerLoop)
                     points += 2
-                    InnerLoop -= 1
+                    innerLoop -= 1
                 }
             }
             
             if (handSize != hand.count)
             {
-                hand.removeAtIndex(OuterLoop)
+                hand.remove(at: outerLoop)
                 points += 2
-                OuterLoop -= 1
+                outerLoop -= 1
             }
             
         }
-        
+        let negativePoints = hand.count
         hand.removeAll()
         drawCards()
-        let negativePoints = hand.count
         return points - negativePoints
     }
     
